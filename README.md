@@ -59,10 +59,13 @@ Data Science work flow:
 
 Using data from Reddit's API, a classification model was built using Logistic Regression, with an accuracy of 93%. The model was able to achieve 92.5% precision and 93% recall. Another model was built using Random Forest Classifier. This model was rejected over the previous model for a low accuracy score, 92.7%.
 
-Based on the Confusion Matrix, the number of False Positives (Type 1 Error) are 20 and number of False Negatives (Type 2 Error) are 16. Based on the application, it can be determined what kind of error need to be minimized. A real world application for this model would be categorizing a blog post for novice or expert. This could be an addition alongside *reading time* feature. If a company is trying to attract novice readers, the company would want to minimize Type 1 Errors as it wants to encourage more readers.  
+Based on the Confusion Matrix, the number of False Positives (Type 1 Error) are 20 and number of False Negatives (Type 2 Error) are 16. Based on the application, it can be determined what kind of error need to be minimized. If a company is trying to attract novice readers, the company would want to minimize Type 1 Errors as it wants to encourage more readers.  
 
 Amongst the top predictors for r/explainlikeimfive is engineering, which is obvious considering we used that as the search term. But some of the other top predictors are why, explain, how, explanation, difference, understand, reverse, computer and what. On the other hand, for r/AskScience, they are engineer, normal, advice, mechanical, degree, environmental, school, career, job, own, want. We can see a pattern in these words. The words from r/explainlikeimfive are more towards trying to understand things with why, how and what. Whereas, words from r/AskScience are more specific to the field.
 
 It can be inferred that based on the words used in the posts, you can predict the subject matter expertise in the field and the difficulty level of the post.
 
-As a future step, it would be worth to further explore Decision Trees along with ensemble methods. Ensemble methods use multiple algorithms and make predictions on the target variable with better results as compared to individual algorithms. Boosting, AdaBoosting and Stacking could be considered for the model in future.
+
+As a future step, the model can be scaled and used to categorize articles on the level of subject matter difficulty, and can be used alongside *reading time* feature.
+
+Additionally, it would be worth incorporating Decision Trees along with ensemble methods. Ensemble methods use multiple algorithms and make predictions on the target variable with better results as compared to individual algorithms. Boosting, AdaBoosting and Stacking could be considered for the model in future.
